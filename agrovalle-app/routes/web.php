@@ -9,7 +9,7 @@ Route::middleware('guest')->group(function () {
 });
 
 // Rutas protegidas
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', \App\Http\Middleware\NoCache::class])->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::resource('insumos', InsumoController::class)->except('show');
