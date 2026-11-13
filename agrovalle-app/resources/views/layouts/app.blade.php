@@ -23,7 +23,7 @@
 
     <aside class="sidebar d-flex flex-column">
         <div class="brand text-center">
-            <img src="{{ asset('img/logo.png') }}" alt="Logo AGROVALLE" height="50" class="mb-2"><br>
+            <img src="{{ asset('img/logo.jpg') }}" alt="Logo AGROVALLE" height="50" class="mb-2"><br>
             AGROVALLE HONDURAS
         </div>
         <ul class="nav flex-column mt-2">

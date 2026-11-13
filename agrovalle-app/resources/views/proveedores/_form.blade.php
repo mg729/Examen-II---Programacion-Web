@@ -4,13 +4,13 @@
 
 <div class="row g-3">
     <div class="col-md-4">
-        <label class="form-label">RTN (14 dígitos)</label>
+        <label class="form-label">RTN (14 digitos)</label>
         <input type="text" name="rtn" maxlength="14" value="{{ $v('rtn') }}"
                class="form-control @error('rtn') is-invalid @enderror">
         @error('rtn')<div class="invalid-feedback">{{ $message }}</div>@enderror
     </div>
     <div class="col-md-8">
-        <label class="form-label">Empresa (razón social)</label>
+        <label class="form-label">Empresa (razon social)</label>
         <input type="text" name="empresa" value="{{ $v('empresa') }}"
                class="form-control @error('empresa') is-invalid @enderror">
         @error('empresa')<div class="invalid-feedback">{{ $message }}</div>@enderror
@@ -22,13 +22,13 @@
         @error('contacto')<div class="invalid-feedback">{{ $message }}</div>@enderror
     </div>
     <div class="col-md-6">
-        <label class="form-label">Teléfono (8 dígitos)</label>
+        <label class="form-label">Teléfono (8 digitos)</label>
         <input type="text" name="telefono" maxlength="8" value="{{ $v('telefono') }}"
                class="form-control @error('telefono') is-invalid @enderror">
         @error('telefono')<div class="invalid-feedback">{{ $message }}</div>@enderror
     </div>
     <div class="col-md-4">
-        <label class="form-label">Categoría</label>
+        <label class="form-label">Categoria</label>
         <select name="categoria" class="form-select @error('categoria') is-invalid @enderror">
             <option value="">Seleccione...</option>
             @foreach($categorias as $c)
@@ -38,7 +38,7 @@
         @error('categoria')<div class="invalid-feedback">{{ $message }}</div>@enderror
     </div>
     <div class="col-md-4">
-        <label class="form-label">Límite de crédito (L.)</label>
+        <label class="form-label">Límite de credito (L.)</label>
         <input type="number" step="0.01" min="0" name="limite_credito" value="{{ $v('limite_credito', 0) }}"
                class="form-control @error('limite_credito') is-invalid @enderror">
         @error('limite_credito')<div class="invalid-feedback">{{ $message }}</div>@enderror
@@ -48,7 +48,7 @@
         <select name="dias_credito" class="form-select @error('dias_credito') is-invalid @enderror">
             <option value="">Seleccione...</option>
             @foreach($diasCredito as $d)
-                <option value="{{ $d }}" @selected((string) $v('dias_credito') === (string) $d)>{{ $d }} días</option>
+                <option value="{{ $d }}" @selected((string) $v('dias_credito') === (string) $d)>{{ $d }} dias</option>
             @endforeach
         </select>
         @error('dias_credito')<div class="invalid-feedback">{{ $message }}</div>@enderror

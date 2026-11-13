@@ -15,7 +15,7 @@
     <div class="card shadow-lg login-card">
         <div class="card-body p-4">
             <div class="text-center mb-4">
-                <img src="{{ asset('img/logo.png') }}" alt="Logo AGROVALLE" height="70">
+                <img src="{{ asset('img/logo.jpg') }}" alt="Logo AGROVALLE" height="70">
                 <h4 class="mt-2 text-success fw-bold">AGROVALLE HONDURAS</h4>
                 <small class="text-muted">Sistema de gestion interna</small>
             </div>
